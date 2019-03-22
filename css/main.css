@@ -451,7 +451,8 @@ section {
 }
 
 .folio-image img {
-  width: 100%;
+  width: 99%;
+  margin-bottom: 1%;
 }
 
 #portfolio .folio-item:hover .overlay {
@@ -894,6 +895,9 @@ ul.address {
 }
 #footer .social-icons ul li a.tumblr:hover {
   background-color: #ff6b00;
+}
+.color-icon {
+  color: #32ba46;
 }
 
 /*Presets*/
