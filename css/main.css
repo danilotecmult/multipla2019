@@ -495,6 +495,10 @@ section {
   margin-left: -17px;
 }
 
+.textImg{
+  
+}
+
 /*************************
 *********CEOs CSS*********
 **************************/
@@ -1068,13 +1072,15 @@ figcaption {padding-left: 20px;color: #fff; font-family: "Kaushan Script","Lato"
 
 
 .contenedor-slider {
-  margin: auto;
+  margin: 25px 25px 5% 25px;
+  float: left;
   width: 85%;
   max-width: 500px;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 0 0 10px #006330,
+  box-shadow: 0 0 0 5px #006330,
  0 2px 2px;
+ 
 }
 
 .slider {
@@ -1128,3 +1134,76 @@ figcaption {padding-left: 20px;color: #fff; font-family: "Kaushan Script","Lato"
   background-color: #006330 !important;
 }
 
+.transparente{
+  background-color: transparent
+}
+.texto{
+  text-align: center
+}
+
+.cliente{
+  background-color: transparent
+}
+
+/*************************
+*******enviar CSS*******
+**************************/
+#enviar {
+  text-align: center;
+  background-image: url(../images/enviar.jpg);
+}
+
+#enviar i {
+  font-size: 48px;
+}
+
+#enviar h3 {
+  margin-top: 15px;
+  font-size: 30px;
+  margin-bottom: 7px;
+  color: #fff;
+}
+
+#enviar .slider-overlay {
+  opacity: 0.8;
+}
+/*************************
+*******atendimento CSS*******
+**************************/
+#atendimento {
+  text-align: center;
+  background-image: url(../images/atendimento.jpg);
+}
+
+#atendimento i {
+  font-size: 48px;
+}
+
+#atendimento h3 {
+  margin-top: 15px;
+  font-size: 30px;
+  margin-bottom: 7px;
+  color: #fff;
+}
+
+#atendimento .slider-overlay {
+  opacity: 0.8;
+}
+
+.navlogo{
+  height: 80px;
+}
+
+.text{
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+.textoport{
+  text-align:justify;
+  margin-left: 7%;
+  margin-top: 2%;
+  margin-right: 7%;
+  margin-bottom: 2%;
+
+}

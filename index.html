@@ -14,8 +14,11 @@
   <link href="css/main.css" rel="stylesheet">
   <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet"> 
- <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" href="images/favicon.ico">
+  
+  
+  
 </head>
 
 <body>
@@ -73,13 +76,25 @@
             <ul class="nav navbar-nav navbar-right">                 
               <li class="scroll active"><a href="#home">Home</a></li>
               <li class="scroll"><a href="#about-us">Sobre nós</a></li> 
-              <li class="scroll"><a href="#team">Quem somos</a></li> 
-              <li class="scroll"><a href="#services">Serviços</a></li>                   
-              <li class="scroll"><a href="#portfolio">Nossos trabalhos</a></li>
+              <!-- <li class="scroll"><a href="#team">Quem somos</a></li>  -->
+              <li class="scroll"><a href="#portfolio">Serviços</a></li>                   
+              <!-- <li class="scroll"><a href="#portfolio">Nossos trabalhos</a></li> -->
               <li class="scroll"><a href="#blog">Notícias</a></li>
               <li class="scroll"><a href="#contact">Contatos</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.dominioatendimento.com:82/login.html" target="_blank"><i class="fas fa-user"></i></a>
+              <li class="nav-item dropdown cliente">
+                <!-- <a class="nav-link" href="https://www.dominioatendimento.com:82/login.html" target="_blank"><i class="fas fa-user"></i></a> -->
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Área do Cliente
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item fas fa-envelope text-center" href="atendimento.html"target="_blank" > atendimento</a>                 
+                  <!-- <div class="dropdown-divider"></div>                 -->
+                  <a class="dropdown-item fas fa-cloud-upload-alt text-center" href="enviar.html"target="_blank"> Enviar Documento</a>               
+                  <!-- <div class="dropdown-divider"></div>                -->
+                  <a class="dropdown-item fas fa-user" href="#contact"> Cliente novo?</a>
+                </div>
+
+              </li>
             </li>       
             </ul>
           </div>
@@ -89,7 +104,7 @@
   <section id="about-us" class="parallax">
       <div class="container">
           <div class="row">
-              <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
+              <div class="heading text-center texto col-sm-12" data-wow-duration="1200ms" data-wow-delay="300ms">
                   <h2>Por que escolher a Multipla?</h2>
                 </div>
               <div class="col-lg-6 justificar-texto">
@@ -101,13 +116,12 @@
               </div>
               <div class="col-lg-6 text-center">
                   <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/eGa5TlFWj8c" allowfullscreen></iframe>
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mCv80orf3Ms" allowfullscreen></iframe>
                   </div>
                   <br>
                   
               </div>
-          </div>
-      </div>
+       
       <div id="contenedor-slider" class="contenedor-slider">
         <div id="slider" class="slider">
            <div class="slider__section"><img src="ConteudoGaleria/DSC00390.jpg" class="slider__img"></div>
@@ -118,6 +132,15 @@
          <div id="btn-prev" class="btn-prev">&#60;</div>
          <div id="btn-next" class="btn-next">&#62;</div>
         </div>
+        <div class="col-lg-6 text">
+          <p class="justificar-texto">
+              O mundo globalizado exige cada vez mais das empresas. É preciso se aproximar dos clientes de forma inteligente e estratégica. É aí que entram as soluções da Multipla Gestão Integrada. Uma empresa de visão que sempre tem como valores competência, cooperação, realização, prática e ética.</p>
+              <p class="justificar-texto">
+A nossa equipe é formada por profissionais competentes de referência no mercado. Todos formados nas melhores instituições de ensino do país, preparados para cumprir a nossa missão que é disponibilizar Soluções Confiáveis agregando valores que buscam o desenvolvimento dos seus negócios, através da Gestão e Tecnologia Integrada.
+</p>
+      </div>
+      </div>
+    </div>
         
   </section>
 
@@ -183,7 +206,7 @@
       </div>            
     </div>
   </section>
-  <section id="services">
+  <!-- <section id="services">
     <div class="container">
       <div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
         <div class="row">
@@ -252,12 +275,12 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <section id="portfolio">
     <div class="container">
       <div class="row">
         <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-          <h2>Conheça mais os nossos serviços</h2>
+          <h2>Conheça mais</h2>
           <p>Nosso objetivo é formar uma parceria de sucesso com você, auxiliando-o a alcançar os melhores resultados nos seus negócios, oferecendo assessoria na área contábil, tributária, pessoal, jurídica, dentre outras. Com atendimento diferenciado e sempre buscando sua satisfação.</p>
         </div>
       </div> 
@@ -267,7 +290,11 @@
         <div class="col-sm-3">
           <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="300ms">
             <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/1.jpg" alt="">
+              <img class="img-responsive" src="images/portfolio/1.jpg" alt="Auditoria" >
+              <div class="post-meta">
+                <span><i class="fas fa-search"></i> Auditoria</span>                
+              </div>
+              
             </div>
             <div class="overlay">
               <div class="overlay-content">
@@ -276,7 +303,27 @@
                     <h3>Auditoria</h3>
                   </div>
                   <div class="folio-overview">                   
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                    
+                    <div>
+                      <p class="textoport">                   
+                          - Auditoria das Demonstrações Contábeis 
+                          e dos Controles Internos;<br>
+
+                          - Revisões Limitdas das Demonstrações Contábeis;<br>
+
+                          - Avaliação de Implantação de Controles Internos;<br>
+
+                          - Avaliação de Balanços Projetados;<br>
+
+                          - Planejamento Estratégico;<br>
+
+                          - Auditoria Contábil;<br>
+
+                          - Auditoria Tributária;<br>
+
+                          - Treinamentos.<br>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -286,7 +333,10 @@
         <div class="col-sm-3">
           <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="400ms">
             <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/2.jpg" alt="">
+              <img class="img-responsive" src="images/portfolio/2.jpg" alt="Contábil">
+              <div class="post-meta">
+                <span><i class="fas fa-search"></i> Contábil</span>                
+              </div>
             </div>
             <div class="overlay">
               <div class="overlay-content">
@@ -295,7 +345,23 @@
                     <h3>Contábil</h3>
                   </div>
                   <div class="folio-overview">
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                    <div>
+                      <p class="textoport">                   
+                        - Levantamento e Diagnóstico da Área Contábil;<br>
+
+                        - Escrituração Contábil;<br>
+                        
+                        - Elaboração de Relatórios e Demonstrações Contábeis;<br>
+                        
+                        - Revisões Contábeis para Fins Fiscais;<br>
+                        
+                        - Informatização das Rotinas Contábeis;<br>
+                        
+                        - Emissão dos Livros Contábeis Obrigatórios;<br>
+                        
+                        - Treinamento.<br>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -305,7 +371,10 @@
         <div class="col-sm-3">
           <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="500ms">
             <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/3.jpg" alt="">
+              <img class="img-responsive" src="images/portfolio/3.jpg" alt="Estoque e Custos">
+              <div class="post-meta">
+                <span><i class="fas fa-search"></i> Estoque e Custos</span>                
+              </div>
             </div>
             <div class="overlay">
               <div class="overlay-content">
@@ -314,7 +383,25 @@
                     <h3>Estoque e Custos</h3>
                   </div>
                   <div class="folio-overview">
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                    <div>
+                      <p class="textoport">                   
+                        - Levantamento e Diagnósticos da Área de Suprimentos;<br>
+
+                        - Implatação de Políticas de Gestão de Suprimentos;<br>
+                        
+                        - Implatação de Políticas de Gestão de Suprimentos;<br>
+                        
+                        - Elaboração de Relatórios de Demonstração do Fluxo de Suprimentos;<br>
+                        
+                        - Informtização das Rotinas de Entrada e Saída de Suprimentos;<br>
+                        
+                        - Auditoria de Estoques;<br>
+                        
+                        - Demonstrações pelos diversos métodos dos custos de por centro de resultados ou produto;<br>
+                        
+                        - Emissão de relatórios demonstrando a margem de contribuição.<br>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -324,7 +411,10 @@
         <div class="col-sm-3">
           <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="600ms">
             <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/4.jpg" alt="">
+              <img class="img-responsive" src="images/portfolio/4.jpg" alt="Financeiro">
+              <div class="post-meta">
+                <span><i class="fas fa-search"></i> Financeiro</span>                
+              </div>
             </div>
             <div class="overlay">
               <div class="overlay-content">
@@ -333,7 +423,23 @@
                     <h3>Financeiro</h3>
                   </div>
                   <div class="folio-overview">
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                    <div>
+                      <p class="textoport">                   
+                        - Levantamento e Diagnóstico da Área Financeira;<br>
+
+                        - Acompanhamento do Fluxo Financeiro (Orçado x Realizado);<br>
+                        
+                        - Elaboração de Relatórios e Demonstrações Financeiras;<br>
+                        
+                        - Implatação de Controles Internos na Área Financeira;<br>
+                        
+                        - Informatização das Rotinas Financeiras;<br>
+                        
+                        - Projetações (orçamentos) das Demonstrações Contábeis e Financeiras;<br>
+                        
+                        - Treinamento.<br>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -343,7 +449,10 @@
         <div class="col-sm-3">
           <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="700ms">
             <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/5.jpg" alt="">
+              <img class="img-responsive" src="images/portfolio/5.jpg" alt="Pessoal">
+              <div class="post-meta">
+                <span><i class="fas fa-search"></i> Pessoal</span>                
+              </div>
             </div>
             <div class="overlay">
               <div class="overlay-content">
@@ -352,7 +461,25 @@
                     <h3>Pessoal</h3>
                   </div>
                   <div class="folio-overview">
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                    <div>
+                      <p class="textoport">                   
+                        - Levantamento e Diagnóstico da Área de Pessoal;<br>
+
+                        - Apuração de Encargos Trabalhista;<br>
+                        
+                        - Elaboração de Folha de Pagamento;<br>
+                        
+                        - Elaboração de Relatórios e Mapas da Área de Pessoal;<br>
+                        
+                        - Assessoria para Rescisões de Processos Trabalhitas;<br>
+                        
+                        - Informatização das Rotinas de Pessoal;<br>
+                        
+                        - Consultas, Pareceres e Defesas Administrativa;<br>
+                        
+                        - Treinamento.<br>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -362,7 +489,10 @@
         <div class="col-sm-3">
           <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="800ms">
             <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/6.jpg" alt="">
+              <img class="img-responsive" src="images/portfolio/6.jpg" alt="Recursos Humanos">
+              <div class="post-meta">
+                <span><i class="fas fa-search"></i> Recursos Humanos</span>                
+              </div>
             </div>
             <div class="overlay">
               <div class="overlay-content">
@@ -371,7 +501,17 @@
                     <h3>Recursos Humanos</h3>
                   </div>
                   <div class="folio-overview">
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                    <div>
+                      <p class="textoport">                   
+                        - Elaboração, Implatação e Acompanhamento das Rotinas Administrativas-Operacionais;<br>
+
+                        - Avaliação de Desempenho;<br>
+                        
+                        - Recrutamento / Seleção;<br>
+                        
+                        - Treinamentos.<br>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -381,7 +521,10 @@
         <div class="col-sm-3">
           <div class="folio-item wow fadeInRightBig" data-wow-duration="1000ms" data-wow-delay="900ms">
             <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/7.jpg" alt="">
+              <img class="img-responsive" src="images/portfolio/7.jpg" alt="Tecnologia">
+              <div class="post-meta">
+                <span><i class="fas fa-search"></i> Tecnologia</span>                
+              </div>
             </div>
             <div class="overlay">
               <div class="overlay-content">
@@ -390,7 +533,21 @@
                     <h3>Tecnologia</h3>
                   </div>
                   <div class="folio-overview">
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                    <div>
+                      <p class="textoport">                   
+                        - Desenvolvimento de Sistemas;<br>
+
+                        - Implatação de Sistemas;<br>
+                        
+                        - Manutenção de Computadores;<br>
+                        
+                        - Avaliação para Inovações Tecnológicas;<br>
+                        
+                        - Suporte aos Usuários;<br>
+                        
+                        - Treinamentos.<br>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -400,7 +557,10 @@
         <div class="col-sm-3">
           <div class="folio-item wow fadeInLeftBig" data-wow-duration="1000ms" data-wow-delay="1000ms">
             <div class="folio-image">
-              <img class="img-responsive" src="images/portfolio/8.jpg" alt="">
+              <img class="img-responsive" src="images/portfolio/8.jpg" alt="Tributário">
+              <div class="post-meta">
+                <span><i class="fas fa-search"></i> Tributário</span>                
+              </div>
             </div>
             <div class="overlay">
               <div class="overlay-content">
@@ -409,7 +569,33 @@
                     <h3>Tributário</h3>
                   </div>
                   <div class="folio-overview">
-                    <span class="folio-expand"><a href="images/portfolio/portfolio-details.jpg" data-lightbox="portfolio"><i class="fa fa-search-plus"></i></a></span>
+                    <div>
+                      <p class="textoport">                   
+                        - Levantamento e Diagnóstico da Área Fiscal;<br>
+
+                        - Escrituração e Apuração Fiscal;<br>
+                        
+                        - Planejamento Tributário;<br>
+                        
+                        - Elaboração de Relatórios e Demonstrações Ficais;<br>
+                        
+                        - Revisões Tributárias;<br>
+                        
+                        - Assessoria para fiscalizações, Autos e Processos Fiscais;<br>
+                        
+                        - Informatização das Rotinas Fiscais;<br>
+                        
+                        - Consultoria Relacionada a Tributos e Contribuições;<br>
+                        
+                        - Contencioso Tributário Administrativo e Recuperação de Impostos;<br>
+                        
+                        - Acompanhamento e Aproveitamento de Incentivos Fiscais;<br>
+                        
+                        - Consulta. Pareceres e Defesa Administrativas;<br>
+                        
+                        -Treinamento.<br>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -438,7 +624,7 @@
         </div>
     </div>
   </section>
-
+  
   <section id="blog">
     <div class="container">
       <div class="row">
@@ -540,13 +726,13 @@
           <div class="row">
             <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
               <h2>Contate-Nos</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam</p>
+              <p>Entre em contato conosco e agende sua visita.</p>
             </div>
           </div>
           <div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
             <div class="row">
               <div class="col-sm-6">
-                <form id="main-contact-form" name="contact-form" method="post" action="#">
+                <form name="contact-form" method="post" action="envia_email_gmail.php">
                   <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
                     <div class="col-sm-6">
                       <div class="form-group">
@@ -579,10 +765,10 @@
                 <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
                   <p>Venha nos conhecer!</p>
                   <ul class="address">
-                    <li><i class="fa fa-map-marker"></i> <span> Endereço:</span>Avenida Antônio Carlos Magalhães, Empresarial Thomé de Souza, nº 3244, 15º andar, salas 1516 a 1520, Pituba, Salvador, Bahia, CEP: 411800-700.</li>
-                    <li><i class="fa fa-phone"></i> <span> Phone:</span> 71 3025 5700  </li>
-                    <li><i class="fa fa-envelope"></i> <span> Email:</span><a href="contato@grupomultipla.com.br">contato@grupomultipla.com.br</a></li>
-                    <li><i class="fa fa-globe"></i> <span> Website:</span> <a href="www.grupomultipla.com.br">www.grupomultipla.com.br</a></li>
+                    <li><i class="fa fa-map-marker"></i> <span> Endereço:</span> Avenida Antônio Carlos Magalhães, Empresarial Thomé de Souza, nº 3244, 15º andar, salas 1516 a 1520, Pituba, Salvador, Bahia, CEP: 411800-700.</li>
+                    <li><i class="fa fa-phone"></i> <span> Telefone:</span> 71 3025 5700  </li>
+                    <li><i class="fa fa-envelope"></i> <span> E-mail:</span><a href="contato@grupomultipla.com.br">contato@grupomultipla.com.br</a></li>
+                    <li><i class="fa fa-globe"></i> <span> site:</span> <a href="www.grupomultipla.com.br">www.grupomultipla.com.br</a></li>
                   </ul>
                 </div>                            
               </div>
@@ -599,8 +785,7 @@
             <a href="index.html"><img class="img-responsive" src="images/multipla.png" alt=""></a>
           </div>
           <div class="social-icons">
-            <ul>
-              <li><a class="envelope" href="contato@grupomultipla.com.br" target="_blank"><i class="fa fa-envelope"></i></a></li>
+            <ul>                            
               <li><a class="instagram" href="https://www.instagram.com/multiplagestao/" target="_blank"><i class="fab fa-instagram"></i></a></li> 
               <li><a class="facebook" href="https://www.facebook.com/multiplagestao" target="_blank"><i class="fab fa-facebook"></i></a></li>
             </ul>
@@ -611,7 +796,7 @@
         <div class="container">
           <div class="row">
             <div class="text-center col-sm-8 col-sm-offset-2">
-              <p>&copy; 2019 TecMult.</p>
+              <p>&copy; Todos os direitos reservados à Multipla - 2019</p>
             </div>
           </div>
         </div>
