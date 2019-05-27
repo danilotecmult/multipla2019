@@ -1205,12 +1205,13 @@ figcaption {padding-left: 20px;color: #fff; font-family: "Kaushan Script","Lato"
   margin-top: 2%;
   margin-right: 7%;
   margin-bottom: 2%;
- 
+  height: 200px; 
+  overflow: auto;
+  width: 400px;
 
 }
 /* mobile phone */
-@media all and (max-width: 768px) {
   #divContent{
    overflow:auto; 
-  }
+  
 }
