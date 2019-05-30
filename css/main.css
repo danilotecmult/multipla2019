@@ -416,6 +416,14 @@ section {
 .overlay .folio-info h3 {
   margin-top: 0;
   color: #fff;
+  top: 0;
+  vertical-align: top;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+
 }
 
 .folio-overview a {
@@ -1201,17 +1209,36 @@ figcaption {padding-left: 20px;color: #fff; font-family: "Kaushan Script","Lato"
 
 .textoport{
   text-align:justify;
-  margin-left: 7%;
+  /* margin-left: 10%;
   margin-top: 2%;
-  margin-right: 7%;
-  margin-bottom: 2%;
-  height: 200px; 
+  margin-right: 0%;
+  margin-bottom: 2%; */
+  height: 200px !important; 
   overflow: auto;
-  width: 400px;
+  width: 348px !important;
+    margin: 0;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+  
 
 }
 /* mobile phone */
   #divContent{
    overflow:auto; 
   
+}
+.titulotext {
+margin-top: 2%;
+margin-bottom: 2%;
+}
+
+.noticias{
+  border: none;
+  overflow: auto;
+  height:600px !important; 
+  width: 100% !important;
 }
