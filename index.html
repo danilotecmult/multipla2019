@@ -732,5 +732,16 @@ A nossa equipe é formada por profissionais competentes de referência no mercad
   <script type="text/javascript" src="js/lightbox.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
 
+<script>
+  if(window.matchMedia("(max-width:600px)").matches){
+      const array = document.getElementsByClassName('textoport');
+      for(let e of array){
+          e.classList.add('textlong');
+      }
+  }
+</script>
+
+
+
 </body>
 </html>
