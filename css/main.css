@@ -1216,13 +1216,12 @@ figcaption {padding-left: 20px;color: #fff; font-family: "Kaushan Script","Lato"
   height: 200px !important; 
   overflow: auto;
   width: 348px !important;
-    margin: 0;
-
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) }
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) }
   
 
 }
